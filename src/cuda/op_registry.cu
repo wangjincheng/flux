@@ -47,6 +47,7 @@ init_device_properties() {
     case 92: sm_core = SMCoreEnum::L20; break;
     case 108: sm_core = SMCoreEnum::A100; break;
     case 78: sm_core = SMCoreEnum::H20; break;
+    case 114:
     case 132: sm_core = SMCoreEnum::H800; break;
     default: FLUX_CHECK(false) << "Unsupported SM count for SMCoreEnum: " << sm_count; break;
   }
